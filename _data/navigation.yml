@@ -2,8 +2,8 @@
 main:
   - title: "Home"
     url: https://cbjohnson30.github.io
-  - title: "Posts"
-    url: /posts/
+  # - title: "Posts"
+  #   url: /posts/
   - title: "Resume"
     url: /resume/
   # - title: "Sitemap"

@@ -21,7 +21,7 @@ title                    : "Chris B. Johnson's Portfolio"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Chris B. Johnson"
-description              : "Data Geek | Data Analysis | Data Engineering | Python | Always Asking Why"
+description              : "Data Geek, Always Asking Why"
 url                      : cbjohnson30.github.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Chris B. Johnson"
   avatar           : "/assets/images/headshot.png"
-  bio              : "Data Geek | Data Analysis | Data Engineering | Python | Always Asking Why"
+  bio              : "Data Geek, Always Asking Why"
   location         : "San Diego, CA"
   email            :
   links:
@@ -123,7 +123,7 @@ author:
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:christopher.bryan.johnson@gmail.com"
     - label: "LinkedIn"
-      icon: "fas fa-fw fa-link"
+      icon: "fas fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/christopher-johnson/"
     - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"

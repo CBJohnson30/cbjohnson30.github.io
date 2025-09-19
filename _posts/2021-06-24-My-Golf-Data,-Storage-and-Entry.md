@@ -6,15 +6,15 @@ The first step in researching this project was to start looking at golf applicat
 
 After figuring out that I am going to need to build a system completely from scratch, I set out to design the database that would store the data. I landed on a two-schema system. The first one contains information about the courses I played, and the second contains information about each round I played. The first schema, “Courses”, contains four tables: ```course_name```, ```course_version```, ```course_info```, and ```hole_info```. This schema holds information that could be found on a scorecard, and the most important tables are ```course_info``` and ```hole_info```. ```Course_info``` holds all the information about a course at its tee level. This would be front nine and back nine distance, total distance, rating, and slope. Rating and slope are two different difficulty measures used to compare courses. Most golf courses have different tees that a person can play from. This tee difference will affect the distance and difficulty of the course being played. Even though I have the tees I enjoy the most, I do play from different tees on the same course depending on who I am playing with. Hole_info stores data about each hole at a course/tee level. Par, distance, and handicap are columns that should be highlighted in this table. Hole handicap is the ranking of how hard that particular hole is on the course. Side note — I think it would be interesting to try to debunk this ranking with my golf scores and statistical analysis. ```Course_name``` holds identifiable information about a course, and course_version is there in case a course ever goes through any renovations or changes. Below is a diagram of what the Courses schema looks like.
 
-![courses_schema](assets\images\golf_data_images\golf_1.png)
+![courses_schema](..\assets\images\golf_data_images\golf_1.png)
 
 The second schema revolves around each round that is played and contains three tables: ```round_info```, ```hole_scores```, and ```note_definitions```. Round_info stores information about where each round was played, what tee was used, and even the weather during the round. Hole_scores holds data about each hole that was played during a round. It not only contains the score of each hole but also putts, fairways, and greens in regulation hit, and sides missed on fairways and greens. There are also two note columns for each hole if necessary, as well. I used notes to mark that something abnormal happened, usually bad. These notes are stored in abbreviations, but the full name and its definition can be found in the note_definitions table. Below is a diagram of what the Scores schema looks like.
 
-![scores_schema](assets\images\golf_data_images\golf_2.png)
+![scores_schema](..\assets\images\golf_data_images\golf_2.png)
 
 These two schemas can connect by using ```course_id```, ```course_version_id```, and ```tee_played``` in the ```round_info``` table back to the ```course_info``` or ```hole_info``` tables.
 
-![round_entry](assets\images\golf_data_images\golf_3.png)
+![round_entry](..\assets\images\golf_data_images\golf_3.png)
 
 Next up was data entry. I wanted my data entry process to be as simple as possible but something I could easily repeat. Finding a data entry solution inside jupyter notebooks seemed like it would be ideal for my situation. I stumbled across a Python package called ipywidgets and found what I was looking for. Ipywidgets is a Python package that lets you build interactive HTML widgets inside a jupyter notebook. These are very simplistic widgets that let you enter values, pick dates, or select values from a list. This was my first time using the ipywidgets package, but I would like to use this package again and make more complex widgets in the future. Most of the tables have their own jupyter notebook for data entry. Course_info and course_version share a notebook, and round_info and hole_score share a notebook as well. Above and to the left is an example of what data entry looks like for a single hole. The full notebooks with all data entry can be found on my [GitHub](https://github.com/CBJohnson30/Golf-Scores).
 
@@ -22,11 +22,11 @@ All of this database setup and data entry leads to analysis. As the data only co
 
 What I have done is some preliminary analysis around what type of hole I play the best when it comes to the par of that hole. I have data on 162 holes that I have played this year: 38 Par 3’s, 90 Par 4’s, and 34 Par 5’s. I started by looking at my average strokes above par for each type of hole.
 
-![strokes_to_par](assets\images\golf_data_images\golf_4.png)
+![strokes_to_par](..\assets\images\golf_data_images\golf_4.png)
 
 As you can see above, I play Par 5’s the best and Par 4’s the worst. None of this is surprising to me, but I think the data may be a little skewed because of the amount of Par 4s I have played compared to the amount of the other two types of holes. Even with playing as few as 90 holes, I am sure to have a few blow-up holes in there. What is a more interesting graph is where I compare each type of hole to the strokes I am compared to par. This can be seen below.
 
-![strokes_to_holes_played](assets\images\golf_data_images\golf_5.png)
+![strokes_to_holes_played](..\assets\images\golf_data_images\golf_5.png)
 
 Two points jump off the graph to me. The first one is the variance of all three hole types. Par 4s are spread across all six strokes to par, while Par 3s only appear on 4 of them. The other point is the closeness between the strokes to par of +2 and +3 for Par 5s. These are only roughly .06% off. Meaning that I am almost as likely to triple a par 5 as I am to double the hole as well. This means I mostly need to keep my head up when I have a blow-up hole and improve my scrambling when I am struggling on a hole as well. I will be looking into this further and using the notes that I make on these holes to give me further insights.
 

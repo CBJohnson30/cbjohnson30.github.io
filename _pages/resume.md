@@ -6,9 +6,8 @@ Author_profile: true
 
 Data geek, leader, problem solver, and critical thinker. Ability to work alone or collaborate with anyone across an organization. Experienced with setting up automation, cleaning data sets, creating data-driven business solutions, and analytics from said data sets. Comfortable presenting and explaining analytic solutions to a single individual or a large group.
 
-## Skills
 
-|         |          | |
+|Skills         |          | |
 |:-------------|:------------------|:------------------|
 | Python       | KPI Development   | Project Management|
 | SQL          | AWS Environments  | ETL/ELT Development|
