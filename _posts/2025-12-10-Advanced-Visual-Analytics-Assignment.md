@@ -7,9 +7,9 @@ The Github repo for the assignment can be found here:
 Here is a quick video going through the whole project.
  
 
-
-https://github.com/user-attachments/assets/ab65bb01-0e4e-4e80-8c0e-c32b1cff5b9b
-
+<video controls="" width="800" height="500" muted="" loop="" autoplay="">
+<source src="https://github.com/CBJohnson30/cbjohnson30.github.io/blob/main/assets/videos/om_621_video.mp4" type="video/mp4">
+</video>
 
 
 
