@@ -15,6 +15,9 @@ Here is a quick video going through the whole project.
 <source src="https://github.com/CBJohnson30/cbjohnson30.github.io/blob/main/assets/videos/om_621_video.mp4" type="video/mp4">
 </video>
 
+## test
+
+<video controls src="../assets/videos/om_621_video.mp4" title="Title"></video>
 
 
 ## Project Overview
