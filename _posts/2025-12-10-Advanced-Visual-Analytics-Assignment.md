@@ -6,18 +6,14 @@ The Github repo for the assignment can be found here:
 ## Video
 Here is a quick video going through the whole project.
  
-[![Watch the video](THUMBNAIL)](https://github.com/CBJohnson30/cbjohnson30.github.io/blob/main/assets/videos/om_621_video.mp4)
-
-## Test
-
 
 <video controls="" width="800" height="500" muted="" loop="" autoplay="">
-<source src="https://github.com/CBJohnson30/cbjohnson30.github.io/blob/main/assets/videos/om_621_video.mp4" type="video/mp4">
+<source src="../assets/videos/om_621_video.mp4" type="video/mp4">
 </video>
 
 ## test
 
-<video controls src="../assets/videos/om_621_video.mp4" title="Title"></video>
+<video controls width="800" height="500" src="../assets/videos/om_621_video.mp4" title="Project Overview"></video>
 
 
 ## Project Overview
