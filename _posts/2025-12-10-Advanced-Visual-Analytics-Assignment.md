@@ -17,7 +17,7 @@ Running a successful business is all about reacting to the unknown. While the fu
 
 ### Storyboard
 
-![story board](https://github.com/CBJohnson30/CSUSM-OM621-Assignment/blob/main/images/story_board.png)
+![story board](..\assets\images\om_621_images\story_board.png)
  
 ## Notebook Overview
 The exploratory_analysis.ipynb covers all EDA and visualization analyses of the data I was given. First, it goes through looking at NaNs and creating and understanding some key variables that we will use in the visualizations. Then it proceeds to create visualizations to understand the distribution of the ‘mode’ and ‘site’ variables.  Next, it looks at the invoice delay variable and compares it to ‘mode’ and ‘site. Last, it helps build an understanding of our data to allow me to gain insights into forecasting transportation costs. 
