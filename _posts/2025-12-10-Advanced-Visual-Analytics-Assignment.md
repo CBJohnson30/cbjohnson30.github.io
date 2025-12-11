@@ -6,7 +6,7 @@ The Github repo for the assignment can be found here:
 ## Video
 Here is a quick video going through the whole project.
 
-<video controls width="800" height="500" src="../assets/videos/om_621_video.mp4" title="Project Overview"></video>
+<video controls width="800" height="500" autoplay=False src="../assets/videos/om_621_video.mp4" title="Project Overview"></video>
 
 
 ## Project Overview
